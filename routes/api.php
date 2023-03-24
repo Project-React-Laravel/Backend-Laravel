@@ -30,7 +30,7 @@ Route::delete('/delete/laptop/{id}', [LaptopApiController::class,'destroy']);
 Route::put('update/laptop/{id}',[LaptopApiController::class,'update']);
 
 //API LOGIN
-Route::post('users/login', [LoginController::class, 'Login'])->name('user.login');
+Route::post('/login', [LoginController::class, 'Login'])->name('user.login');
 
 //API CHECKOUT
 Route::post('/checkout', [CheckoutController::class,'store']);
